@@ -1,6 +1,6 @@
 package nl.beer.BeerOMeter.activities;
 
-import nl.beer.R;
+import nl.beer.BeerOMeter.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
