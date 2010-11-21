@@ -1,4 +1,4 @@
-package nl.beer.db;
+package nl.beer.BeerOMeter.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

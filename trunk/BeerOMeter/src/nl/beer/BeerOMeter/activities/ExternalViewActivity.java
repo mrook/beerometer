@@ -1,4 +1,4 @@
-package nl.beer.activities;
+package nl.beer.BeerOMeter.activities;
 
 import nl.beer.R;
 import android.app.Activity;

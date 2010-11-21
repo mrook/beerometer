@@ -1,4 +1,4 @@
-package nl.beer.model;
+package nl.beer.BeerOMeter.model;
 
 import java.util.Iterator;
 import java.util.Vector;
