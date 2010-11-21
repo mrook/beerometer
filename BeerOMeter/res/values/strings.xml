@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Beer-O-Meter</string>
+<string name="app_desc">This is the Beer-O-Meter</string>
+<string name="main_no_items">No beers!</string>
+</resources>
