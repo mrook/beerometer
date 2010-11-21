@@ -1,11 +1,11 @@
-package nl.beer.db;
+package nl.beer.BeerOMeter.db;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import nl.beer.model.BeerItem;
-import nl.beer.model.BeerStore;
+import nl.beer.BeerOMeter.model.BeerItem;
+import nl.beer.BeerOMeter.model.BeerStore;
 
 import android.content.ContentValues;
 import android.content.Context;

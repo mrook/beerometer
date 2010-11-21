@@ -1,10 +1,10 @@
-package nl.beer.external;
+package nl.beer.BeerOMeter.external;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Vector;
 
-import nl.beer.model.BeerItem;
+import nl.beer.BeerOMeter.model.BeerItem;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

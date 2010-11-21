@@ -1,4 +1,4 @@
-package nl.beer.activities;
+package nl.beer.BeerOMeter.activities;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.Map;
 
 import nl.beer.R;
-import nl.beer.db.BeerStoreOpenHelper;
-import nl.beer.db.ExternalStorageHelper;
-import nl.beer.model.BeerItem;
-import nl.beer.model.BeerStore;
-import nl.beer.utils.Synchronizer;
+import nl.beer.BeerOMeter.db.BeerStoreOpenHelper;
+import nl.beer.BeerOMeter.db.ExternalStorageHelper;
+import nl.beer.BeerOMeter.model.BeerItem;
+import nl.beer.BeerOMeter.model.BeerStore;
+import nl.beer.BeerOMeter.utils.Synchronizer;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package nl.beer.model;
+package nl.beer.BeerOMeter.model;
 
 public class BeerItem implements Comparable<BeerItem> {
 	

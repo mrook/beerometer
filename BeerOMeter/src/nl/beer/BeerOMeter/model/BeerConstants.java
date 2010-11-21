@@ -1,4 +1,4 @@
-package nl.beer.model;
+package nl.beer.BeerOMeter.model;
 
 public interface BeerConstants {
 	public static final int SORTKEY_NAME = 1;
