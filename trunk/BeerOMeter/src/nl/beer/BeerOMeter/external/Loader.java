@@ -21,7 +21,7 @@ import org.json.JSONObject;
 import android.util.Log;
 
 public class Loader {
-	public final static String LOCATION = "http://192.168.0.3/workspace/beerservice/";
+	public final static String LOCATION = "http://beer-o-meter.appspot.com/beerservice";
 
     static final String NAME = "name";
     static final String PERCENTAGE = "percentage";
