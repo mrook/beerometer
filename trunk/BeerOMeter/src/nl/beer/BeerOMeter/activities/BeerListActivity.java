@@ -12,9 +12,11 @@ import nl.beer.BeerOMeter.db.ExternalStorageHelper;
 import nl.beer.BeerOMeter.model.BeerItem;
 import nl.beer.BeerOMeter.model.BeerStore;
 import nl.beer.BeerOMeter.utils.Synchronizer;
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.database.Cursor;
@@ -34,7 +36,8 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 public class BeerListActivity extends ListActivity {
-	public final static int VIEW_UPDATE = 0xf0f0;
+	public final static int VIEW_EXCEPTION = 0xf0f0;
+	public final static int VIEW_UPDATE    = 0xf0f1;
 	
 	public final static String ITEM_TITLE = "title";
     public final static String ITEM_PERCENTAGE = "caption";
@@ -74,6 +77,18 @@ public class BeerListActivity extends ListActivity {
 	    @Override
 	    public void handleMessage(final Message msg) {
 	        switch (msg.what) {
+	        case BeerListActivity.VIEW_EXCEPTION:
+    			AlertDialog.Builder builder = new AlertDialog.Builder(BeerListActivity.this);
+    			builder.setTitle("An exception occurred:")
+    			       .setNeutralButton("Close", new DialogInterface.OnClickListener() {
+    			           public void onClick(DialogInterface dialog, int id) {
+    			                dialog.cancel();
+    			           }
+    			       })
+    				   .setMessage(((Exception) msg.obj).getMessage());
+    			AlertDialog alert = builder.create();
+    			alert.show();
+	        	break;
 	        case BeerListActivity.VIEW_UPDATE:
 	            beerAdapter.notifyDataSetChanged();
 	            break;
@@ -135,12 +150,16 @@ public class BeerListActivity extends ListActivity {
     		
             new Thread(new Runnable(){
             	public void run() {
-            		Synchronizer.synchronize();
-            		
-            		ExternalStorageHelper.push(BeerListActivity.this);
-            		
-            		updateBeerList();
-            		
+            		try {
+	            		Synchronizer.synchronize();
+	            		
+	            		ExternalStorageHelper.push(BeerListActivity.this);
+	            		
+	            		updateBeerList();
+        			} catch (Exception e) {
+            			handler.sendMessage(Message.obtain(handler, BeerListActivity.VIEW_EXCEPTION, e));
+            		}            		
+
 					handler.sendEmptyMessage(BeerListActivity.VIEW_UPDATE);
             	}
         	}).start();
