@@ -21,7 +21,9 @@ import org.json.JSONObject;
 import android.util.Log;
 
 public class Loader {
-	public final static String LOCATION = "http://beer-o-meter.appspot.com/beerservice";
+
+	//public final static String LOCATION = "http://10.0.2.2:8888/beers";
+	public final static String LOCATION = "http://beer-o-server.appspot.com/resources/beerlist";
 
     static final String NAME = "name";
     static final String PERCENTAGE = "percentage";
@@ -36,10 +38,11 @@ public class Loader {
 		String result = query(LOCATION);
 		
 		try {
-			JSONArray jsonItems = new JSONArray(result);
+			JSONObject mainJsonObject = new JSONObject(result);
 			
-			for (int i = 0; i < jsonItems.length(); i++) {
-				JSONObject obj = jsonItems.getJSONObject(i);
+			JSONArray beers = mainJsonObject.getJSONArray("beer");
+			for (int i = 0; i < beers.length(); i++) {
+				JSONObject obj = beers.getJSONObject(i);
 				
 				BeerItem item = new BeerItem();
 				item.setName(obj.getString(NAME));
