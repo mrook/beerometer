@@ -1,0 +1,95 @@
+Affligem Tripel,8.5,9
+Alfa,5,7
+Amstel 1870,5,7
+Arabier,7.5,8.5
+Augustijn,8,8
+Barbar,8,7.75
+Boon Kriek,4.5,5
+Boon Geuze,4.5,4
+Bornem Dubbel,7,8
+Bornem Tripel,11.5,8.5
+Bosbier,4.5,6.5
+Bourgogne des Fl,5,7.5
+Brand Up,5.5,6.75
+Brigand,9,7.75
+Brugse Blond,6,8.75
+Brugse Tripel,9,7.75
+Budvar,5,6.25
+Bush Beer,12,8
+Carlsberg,4,7.5
+Charles Quint,9,7
+Chimay Dubbel,7,6.25
+Chimay Quint,9,7
+Chimay Speciaal,9,6
+Chimay Tripel,11.6,6.5
+Christoffel Blond,5.5,7
+Ciney Blonde,7,7.5
+Ciney Speciale,9,7.75
+Columbus,9,7.5
+Corona,4.5,7.5
+Corsendonk Agnus,7,6.75
+Corsendonk Pater,7.5,8
+DAB,5,7.5
+Delerium Tremens,9,7.75
+Desperados,5.9,8.25
+Deugniet,7.7,7
+Dom Blondje,5,8
+Duvel,8.5,7
+Ename Tripel,9,7.5
+Erdingen Hefe Weiss,5.5,7.5
+Flierefluiter,7,7
+Fosters,8,7
+Gentse Tripel,8,6.25
+Gordon Scotch,8.6,8
+Gouden Carolus,8.5,7.5
+Guillotine,8,8
+Grimbergen Dubbel,6.5,7.5
+Grimbergen Tripel,9,7.5
+Grimbergen Opt Br,10,8.5
+Grolsch Beugel,5,7.5
+Gulden Draak,10.5,7.5
+Hertog Jan Primator,6,6.5
+Hertog Jan Pilsener,5,7.5
+Hertog Jan Tripel,8.5,6.75
+Hertog Jan Gr Pr,10,7
+Hoegaarden Grand Cru,8.5,8
+Hommel,2,7
+Houten Kop,6.5,8
+Julius,8.8,7.5
+Judas,8.5,7.5
+Kapittel Abt,10,7
+Kapittel Prior,9,5.5
+Kapittel Pater,6,7.5
+Kasteelbier Donker,11,8.5
+Kasteel Tripel,11,8.5
+Kilkenny,5,6
+Koninck Cuvee,8,7.5
+Korenwolf,5,8
+Kwel Chouffe,8.5,7
+La Trappe Tripel,8,8
+Leffe Radieuse,8.5,7.5
+Leffe Tripel,8.5,7
+Lindemans Frambozen,4.5,7.5
+Lindemans G Band,8,7.5
+Lindemans Faro,4,6.5
+Lucifer,8,7.5
+Maredsous 10,10,7.5
+Maredsous 8,8,6.75
+Maes Pils,4.9,7
+Moeder Overste,8,6.75
+Mongozo,7,7
+Oerbier,7.5,5.75
+Orval,6.2,6.5
+Oud Zottegems,6.5,8
+Pauwel Kwak,8,8
+Petrus Tripel,7.5,7.75
+Pilsner Urquell,4.5,7.75
+Piraat,9,8
+Rochefort 8,9.2,7.5
+Walbier,5,7.75
+Texels Wit,5,8
+Texels Amber,5.5,8.5
+Texels Goud,5,7.5
+Texels Tripel,8.5,0
+Texels Skuumkoppe,6,8
+Texels Bock,7.5,7
