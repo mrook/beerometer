@@ -23,7 +23,7 @@ import android.util.Log;
 public class Loader {
 
 	//public final static String LOCATION = "http://10.0.2.2:8888/beers";
-	public final static String LOCATION = "http://beer-o-server.appspot.com/resources/beerlist";
+	public final static String LOCATION = "http://beer-o-server.appspot.com/beerlist";
 
     static final String NAME = "name";
     static final String PERCENTAGE = "percentage";
