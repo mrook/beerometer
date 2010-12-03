@@ -4,17 +4,18 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
+import com.google.inject.Inject;
+
 import nl.beer.BeerOServer.controller.BeerController;
-import nl.beer.BeerOServer.controller.BeerControllerImpl;
 import nl.beer.BeerOServer.model.Beer;
 
 @Path("/beer")
 public class BeerResource {
-	// TODO: Use dependency injection :)
 	private BeerController beerController; 
 	
-	public BeerResource() {
-		beerController = new BeerControllerImpl();
+	@Inject
+	public BeerResource(BeerController beerController) {
+		this.beerController = beerController;
 	}
 	
 	@POST

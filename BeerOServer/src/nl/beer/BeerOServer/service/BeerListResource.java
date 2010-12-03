@@ -6,23 +6,23 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
+import com.google.inject.Inject;
+
 import nl.beer.BeerOServer.controller.BeerController;
-import nl.beer.BeerOServer.controller.BeerControllerImpl;
 import nl.beer.BeerOServer.model.Beer;
 
 @Path("/beerlist")
 public class BeerListResource {
-	// TODO: Use dependency injection :)
-	private BeerController beerController; 
-	
-	public BeerListResource() {
-		beerController = new BeerControllerImpl();
+	private BeerController beerController;
+
+	@Inject
+	public BeerListResource(BeerController beerController) {
+		this.beerController = beerController;
 	}
-	
+
 	@GET
 	@Produces("application/json")
 	public List<Beer> retrieve() {
 		return beerController.getAllBeers();
 	}
-	
 }

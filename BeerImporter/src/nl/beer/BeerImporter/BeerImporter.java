@@ -13,7 +13,7 @@ public class BeerImporter {
 
 	public static void main(String[] args) throws IOException {
 		Client client = Client.create();
-		WebResource webResource = client.resource("http://beer-o-server.appspot.com/resources/beer");
+		WebResource webResource = client.resource("http://beer-o-server.appspot.com/beer");
 		
 		Scanner fileScanner = new Scanner(new File("res/beerlist.txt"));
 		

@@ -14,5 +14,12 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jersey-server-1.5-ea06.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jettison-1.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/aopalliance.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-assistedinject-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-multibindings-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-servlet-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-throwingproviders-2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jersey-guice-1.5-ea06.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
