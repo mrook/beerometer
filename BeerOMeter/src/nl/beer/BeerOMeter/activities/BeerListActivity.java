@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 import nl.beer.BeerOMeter.R;
-import nl.beer.BeerOMeter.db.BeerStoreOpenHelper;
 import nl.beer.BeerOMeter.db.ExternalStorageHelper;
 import nl.beer.BeerOMeter.model.BeerItem;
 import nl.beer.BeerOMeter.model.BeerStore;
@@ -19,24 +18,16 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.Settings.Secure;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
 
 public class BeerListActivity extends ListActivity {
 	public final static int VIEW_EXCEPTION = 0xf0f0;
@@ -51,8 +42,6 @@ public class BeerListActivity extends ListActivity {
 	private ProgressDialog progressDialog;
 	
 	private static class BeerListAdapter extends SimpleAdapter {
-		private BeerStore beerStore;
-		
 		BeerListAdapter(Context context, List<Map<String,?>> list) {
 			super(context, list, R.layout.beer_list2,  
                 new String[] { ITEM_TITLE, ITEM_PERCENTAGE, ITEM_GRADE }, new int[] { R.id.list_complex_title, R.id.list_complex_percentage, R.id.list_complex_grade });

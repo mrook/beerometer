@@ -2,9 +2,6 @@ package nl.beer.BeerOMeter.utils;
 
 import java.util.Collections;
 
-import android.app.ProgressDialog;
-
-import nl.beer.BeerOMeter.activities.BeerListActivity;
 import nl.beer.BeerOMeter.external.Loader;
 import nl.beer.BeerOMeter.model.BeerStore;
 

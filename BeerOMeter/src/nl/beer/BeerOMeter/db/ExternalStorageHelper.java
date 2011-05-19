@@ -1,8 +1,6 @@
 package nl.beer.BeerOMeter.db;
 
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 import nl.beer.BeerOMeter.model.BeerItem;
 import nl.beer.BeerOMeter.model.BeerStore;
